@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    </head>
+<body>
+    <nav class="navbar-inverse" style="position: sticky;z-index: 100; top: 0;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+    <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">amrapali kata</a>
+        </div>
+    <div class="navbar-collapse collapse" id="mynavbar">
+        <ul class="nav navbar-nav">
+        <li><a href="about.html">about </a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="hobbies.html">hobbies</a></li>
+            <li><a href="profession.html">profession</a></li>
+             <li><a href="Achivements.html">Achivements</a></li>
+            <li><a href="variable%20change.html">variable</a></li>
+            <li><a href="text.html">text</a></li>
+            <li><a href="animation.html">animation</a></li>
+            
+        </ul>
+
+        </div>
+    </nav>
+
+    <center>
+        <section id="variable change.html">
+        <span>
+        <button onclick="decrease()"><img src="image1.png"></button>
+        <button onclick="increase()"><img src="image2.png"> </button>
+        </span>
+        <div>
+        <label>score:</label>
+        </div>
+        <div id="img">0</div>
+            <script>
+                var score=0;
+function decrease(){
+    score=score-10;
+    document.getElementById("img").textContent=score;
+}
+function increase(){
+    score=score+10;
+    document.getElementById("img").textContent=score;
+}
+                
+            </script>
+            <style>
+            img{
+    width: 250px;
+    height: 200px;
+}
+body{
+    background-color: aqua;
+    
+
+}
+label{
+    color: fuchsia;
+}
+            </style>
+        </section>
+    </center>
+    </body>
+</html>
